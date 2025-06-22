@@ -27,13 +27,15 @@ public class Application {
   }
 
   @GetMapping("/studentList")
-  public Map<String,String> getInfo() {
-    Map<String,String> studentInfo = new HashMap<>();
-    for (Map.Entry<String,String> entry : student.entrySet())
+  public Map<String, String> getInfo() {
+    Map<String, String> studentInfo = new HashMap<>();
+    for (Map.Entry<String, String> entry : student.entrySet()) {
       studentInfo.put(entry.getKey() + "さん", entry.getValue() + " 歳");
+    }
     return studentInfo;
   }
 
+  //情報変更
   @PostMapping("/updateStudent")
   public void updateStudent(String oldName, String newName, String age) {
     Entry<String, String> updateStudent = student.entrySet()
