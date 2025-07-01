@@ -1,4 +1,4 @@
-package raisetech.Student.Management;
+package raisetech.Student.Management.Repository.Data;
 
 import java.time.LocalDate;
 import lombok.Getter;
