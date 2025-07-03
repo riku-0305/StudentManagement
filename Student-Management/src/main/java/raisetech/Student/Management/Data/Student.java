@@ -1,4 +1,4 @@
-package raisetech.Student.Management.Repository.Data;
+package raisetech.Student.Management.Data;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,5 +16,7 @@ public class Student {
   private String mailAddress;
   private int age;
   private String gender;
+  private String remark;
+  private boolean isDelete;
 
 }
