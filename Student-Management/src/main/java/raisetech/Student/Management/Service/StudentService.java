@@ -3,14 +3,15 @@ package raisetech.Student.Management.Service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import raisetech.Student.Management.Repository.Data.Student;
-import raisetech.Student.Management.Repository.Data.StudentCourses;
+import raisetech.Student.Management.Data.Student;
+import raisetech.Student.Management.Data.StudentCourses;
 import raisetech.Student.Management.Repository.StudentRepository;
 
 @Service
 public class StudentService {
 
-  private StudentRepository repository;
+  private final StudentRepository repository;
+
 
   @Autowired
   public StudentService(StudentRepository repository) {
